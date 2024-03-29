@@ -15,7 +15,7 @@
                 <input class="form-check-input" type="checkbox" name="active" id="active" value="1"> 
             </div>
 
-            <button class="btn btn-success" type="submit">Guardar</button>
+            <button class="btn btn-success my-3" type="submit">Guardar</button>
         </div>
     </form>
 @endsection
