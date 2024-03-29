@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <h1>Crear Categoría</h1>
+  <h1 class="text-center">Crear Categoría</h1>
   <form action="{{ route('categories.store')}}" method="post">
     @csrf
         <div class="form-group">

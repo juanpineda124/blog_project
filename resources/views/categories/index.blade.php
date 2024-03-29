@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <h2>Lista De Categorias</h2>
+  <h2 class="text-center">Lista De Categorias</h2>
   <table class="table">
     <thead>
         <tr>

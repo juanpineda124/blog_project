@@ -6,7 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CATEGORIAS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}" >
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f4f4; /* Cambia el color de fondo según tus preferencias */
+        }
+        .container{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-color: #d1e7dd;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
