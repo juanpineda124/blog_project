@@ -29,7 +29,8 @@
                     </td>
                 </tr>
             @endforeach
-                <a href="{{ route('categories.create') }}" class="btn btn-secondary my-3">Regresar</a>
+                <a href="{{ route('categories.create') }}" class="btn btn-secondary my-3">Crear</a>
+                <a href="{{ route('home') }}" class="btn btn-secondary mx-5">Home</a>
         </tbody>
     </table>
 @endsection

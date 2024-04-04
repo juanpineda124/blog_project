@@ -16,6 +16,7 @@
             </div>
 
             <button class="btn btn-success my-3" type="submit">Guardar</button>
+            <a href="{{ route('home') }}" class="btn btn-info mx-5">Home</a>
         </div>
     </form>
 @endsection
