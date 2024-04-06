@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
   <h1 class="text-center">Crear Categoría</h1>
   <form action="{{ route('categories.store')}}" method="post">
     @csrf
@@ -19,4 +20,5 @@
             <a href="{{ route('home') }}" class="btn btn-info mx-5">Home</a>
         </div>
     </form>
+</div>
 @endsection

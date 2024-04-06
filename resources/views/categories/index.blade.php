@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
   <h2 class="text-center">Lista De Categorias</h2>
   <table class="table table-striped">
         <thead>
@@ -24,8 +25,8 @@
                         @endif
                     </td>
                     <td>
-                        <a class="btn btn-primary">Editar</a>
-                        <a class="btn btn-danger">Eliminar</a>
+                        <a href="{{ route('categories.edit', $category->id) }}" class="btn btn-primary">Editar</a>
+                        <a href="{{ route('categories.show', $category->id) }}" class="btn btn-danger">Eliminar</a>
                     </td>
                 </tr>
             @endforeach
@@ -33,4 +34,5 @@
                 <a href="{{ route('home') }}" class="btn btn-secondary mx-5">Home</a>
         </tbody>
     </table>
+</div>
 @endsection
