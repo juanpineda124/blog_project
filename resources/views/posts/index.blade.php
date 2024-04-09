@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
   <h5 class="text-center">Lista De Publicaciones</h5>
-  <a href="{{ route('posts.create') }}" class="btn btn-primary">Crear puplicación</a>
+  <a href="{{ route('posts.create') }}" class="btn btn-primary mb-3">Crear publicación</a>
   <table class="table table-striped">
         <thead>
             <tr>
@@ -15,15 +15,15 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($posts as $post)
+        @foreach ($posts as $post)
                  <tr>
                     <td>{{ $post->id}}</td>
                     <td>{{ $post->title}}</td>
                     <td>{{ $post->content}}</td>
                     <td>{{ $post->category_id}}</td>
                     <td>
-                        <a href="{{ route('posts.show', $post->id) }}" class="btn btn-info">ver</a>
-                        <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary">Eliminar</a>
+                        <a href="{{ route('posts.show', $post->id) }}" class="btn btn-info">Ver</a>
+                        <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary">Editar</a>
                         <form action="{{ route('posts.destroy', $post->id) }}" method='POST' style="display: inline">
                             @csrf
                             @method('DELETE')

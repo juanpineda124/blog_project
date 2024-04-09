@@ -23,7 +23,7 @@
                         <div class="card mx-2 my-5" style="width: 18rem;">
                             <img src="{{ asset('images/crear.jpg') }}" class="card-img-top" alt="imagen vista crear">
                             <div class="card-header">
-                                Vista crear
+                                Crear categoria
                             </div>
                             <div class="card-body">
                                 <p class="card-text">Ingresa a la vista crear en la cual vas a poder crear y guardar la categoria deseada.</p>
@@ -34,11 +34,22 @@
                         <div class="card mx-2 my-5" style="width: 18rem;">
                             <img src="{{ asset('images/index.jpg') }}" class="card-img-top" alt="imagen vista index">
                             <div class="card-header">
-                                Vista index
+                                Lista de categorias
                             </div>
                             <div class="card-body">
                                 <p class="card-text">Ingresa a la vista index en la cual vas a poder visualizar las categorias creadas.</p>
                                 <a href="{{ route('categories.index') }}" class="btn btn-primary">Ingresar</a>
+                            </div>
+                        </div>
+
+                        <div class="card mx-2 my-5" style="width: 18rem;">
+                            <img src="{{ asset('images/pcrear.png') }}" class="card-img-top" alt="imagen vista post crear">
+                            <div class="card-header">
+                                Crear publicacion
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Ingresa y crea una plublicación a la categoria deseada.</p>
+                                <a href="{{ route('posts.create') }}" class="btn btn-primary">Ingresar</a>
                             </div>
                         </div>
                     </div>

@@ -16,17 +16,18 @@
                         </div>
                         <div class="form-group mb-3">
                             <label for="content">Contenido:</label>
-                            <textarea name="content" id="content" rows="5" class="form-control">
+                            <textarea name="content" id="content" rows="5" class="form-control"></textarea>
                         </div>
                         <div class="form-group mb-3">
                             <label for="category">Categoria:</label>
                             <select name="category" id="category" class="form-control">
-                                @foreach
-                                    <option value="{{ $category->id}}">{{ $category->category_name }}</option>
+                                @foreach($categories as $category)
+                                    <option value="{{ $category->id }}">{{ $category->category_name }}</option>
                                 @endforeach
                             </select>
                         </div>
                         <button type="submit" class="btn btn-success mb-3">Guardar</button>
+                        <a href="{{ route('home') }}" class="btn btn-secondary mb-3 mx-5">Home</a>
                     </form>
                 </div>
             </div>
