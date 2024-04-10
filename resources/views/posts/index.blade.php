@@ -9,13 +9,13 @@
             <tr>
                 <th>ID</th>
                 <th>Titulo</th>
-                <th>comentario</th>
+                <th>Comentario</th>
                 <th>Categoria</th>
                 <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
-        @foreach ($posts as $post)
+            @foreach ($posts as $post)
                  <tr>
                     <td>{{ $post->id}}</td>
                     <td>{{ $post->title}}</td>
