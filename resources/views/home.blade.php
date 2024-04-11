@@ -54,7 +54,7 @@
                         </div>
 
                         <div class="card mx-2 my-5" style="width: 18rem;">
-                            <img src="{{ asset('images/pcrear.png') }}" class="card-img-top" alt="imagen vista post crear">
+                            <img src="{{ asset('images/pindex.png') }}" class="card-img-top" alt="imagen vista post crear">
                             <div class="card-header">
                                 Listar publicaciones
                             </div>
