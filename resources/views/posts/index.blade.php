@@ -4,6 +4,7 @@
 <div class="container">
   <h5 class="text-center">Lista De Publicaciones</h5>
   <a href="{{ route('posts.create') }}" class="btn btn-primary mb-3">Crear publicación</a>
+  <a href="{{ route('home') }}" class="btn btn-info mb-3 mx-5">Home</a>
   <table class="table table-striped">
         <thead>
             <tr>
@@ -20,7 +21,11 @@
                     <td>{{ $post->id}}</td>
                     <td>{{ $post->title}}</td>
                     <td>{{ $post->content}}</td>
-                    <td>{{ $post->category_id}}</td>
+                    <td>@if ($post->category)
+                        <p>{{ $post->category->category_name }}</p>
+                    @else
+                        <p>Este post no tiene una categoría asignada.</p>
+                    @endif</td>
                     <td>
                         <a href="{{ route('posts.show', $post->id) }}" class="btn btn-info">Ver</a>
                         <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary">Editar</a>
