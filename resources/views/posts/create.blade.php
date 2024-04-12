@@ -26,7 +26,7 @@
                                     @endforeach
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-primary mb-3">Guardar</button>
+                            <button type="submit" class="btn btn-success mb-3">Guardar</button>
                             <a href="{{ route('posts.index') }}" class="btn btn-secondary mx-5 mb-3">Regresar</a>
                         </form>
                     </div>

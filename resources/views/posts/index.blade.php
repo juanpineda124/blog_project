@@ -2,9 +2,9 @@
 
 @section('content')
 <div class="container">
-  <h5 class="text-center">Lista De Publicaciones</h5>
-  <a href="{{ route('posts.create') }}" class="btn btn-primary mb-3">Crear publicación</a>
-  <a href="{{ route('home') }}" class="btn btn-info mb-3 mx-5">Home</a>
+  <h5 class="text-center"><b>Lista De Publicaciones</b></h5>
+  <a href="{{ route('posts.create') }}" class="btn btn-secondary mb-3">Crear publicación</a>
+  <a href="{{ route('home') }}" class="btn btn-secondary mb-3 mx-5">Home</a>
   <table class="table table-striped">
         <thead>
             <tr>

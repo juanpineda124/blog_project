@@ -6,15 +6,11 @@
     <form action="{{ route('posts.update', $post->id)}}" method="POST">
         @csrf
         @method('PUT')
-
-        @csrf
-        @method('PUT')
-
         <div class="form-group mb-3
         @error('post_title')
             has-error
         @enderror">
-            <label for="post_title">Nombre categoria</label>
+            <label for="post_title">Titulo</label>
             <input type="text" name="post_title" id="post_title" class="form-control"
                 value="{{ $post->post_title}}">
             @error('category_name')

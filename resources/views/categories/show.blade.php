@@ -19,7 +19,7 @@
             @csrf
             @method('DELETE')
             <button class="btn btn-danger mb-3">Eliminar</button>
-            <a href="{{ route('categories.index') }}" class="btn btn-secondary mx-5 mb-3">Index</a>
+            <a href="{{ route('categories.index') }}" class="btn btn-secondary mx-5 mb-3">Regresar</a>
         </form>
     </div>
 </div>
