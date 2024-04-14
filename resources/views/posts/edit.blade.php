@@ -13,7 +13,7 @@
             <label for="post_title">Titulo</label>
             <input type="text" name="post_title" id="post_title" class="form-control"
                 value="{{ $post->post_title}}">
-            @error('category_name')
+            @error('post_title')
                 <span class="help-block">{{ $message }}</span>
             @enderror
         </div>
@@ -31,7 +31,8 @@
             <label for="category">Categoría:</label>
             <select name="category_id" id="category" class="form-control">
                 @foreach($categories as $category)
-                    <option value="{{ $category->id }}" @if($category->id == $post->category_id) selected @endif>{{ $category->category_name }}</option>
+                    <option value="{{ $category->id }}" 
+                    @if($category->id == $post->category_id) selected @endif>{{ $category->category_name }}</option>
                 @endforeach
             </select>
         </div>
