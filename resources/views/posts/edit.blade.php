@@ -20,8 +20,9 @@
 
         <div class="form-group mb-3">
             <label for="post_content">Contenido</label>
-            <textarea name="post_content" id="post_content" class="form-control" 
-                value="{{ $post->post_content }}"></textarea>
+            <textarea name="post_content" id="post_content" class="form-control" >
+                {{ $post->post_content }}
+            </textarea>
             @error('post_content')
                 <span class="help-block">{{ $message }}</span>
             @enderror

@@ -67,7 +67,7 @@
                                  <div class="card mb-2 mx-1">
                                     <img src="{{ asset('images/pindex.png') }}" class="card-img-top" alt="imagen vista post crear">
                                     <div class="card-header">
-                                        Listar publicaciones
+                                        Lista de publicaciones
                                     </div>
                                     <div class="card-body">
                                         <p class="card-text">Ingresa y visualiza la lista de publicaciones que tienen las diferentes categorias.</p>
