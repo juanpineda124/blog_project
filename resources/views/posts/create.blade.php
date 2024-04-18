@@ -4,8 +4,8 @@
 <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Crear Nuevo Post</div>
+                <div class="card" style="background-color: #d1f7d1;">
+                    <div class="card-header text-center">Crear Nueva publicación</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('posts.store') }}">
