@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <h1>{{ $post->title }}</h1>
-    <p>{{ $post->content }}</p>
+    <td>{!! html_entity_decode($post->content) !!}</td>
     @if ($post->category)
             <p>Categoría: {{ $post->category->category_name }}</p>
         @else
