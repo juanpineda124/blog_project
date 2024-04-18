@@ -3,29 +3,24 @@
 @section('content')
 <div class="container">
     <h3 class="text-center">Editar publicación</h3>
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </div>
+    @endif
     <form action="{{ route('posts.update', $post->id)}}" method="POST">
         @csrf
         @method('PUT')
-        <div class="form-group mb-3
-        @error('post_title')
-            has-error
-        @enderror">
-            <label for="post_title">Titulo</label>
-            <input type="text" name="post_title" id="post_title" class="form-control"
-                value="{{ $post->post_title}}">
-            @error('post_title')
-                <span class="help-block">{{ $message }}</span>
-            @enderror
+        <div class="mb-3">
+            <label for="title" class="form-label">Título</label>
+            <input type="text" class="form-control" id="title" name="title" value="{{ old('title', $post->title) }}">
         </div>
 
-        <div class="form-group mb-3">
-            <label for="post_content">Contenido</label>
-            <textarea name="post_content" id="post_content" class="form-control" >
-                {{ $post->post_content }}
-            </textarea>
-            @error('post_content')
-                <span class="help-block">{{ $message }}</span>
-            @enderror
+        <div class="mb-3">
+            <label for="content" class="form-label">Contenido</label>
+            <textarea class="form-control" id="content" name="content" rows="5">{{ old('content', $post->content) }}</textarea>
         </div>
 
         <div class="form-group mb-3">
