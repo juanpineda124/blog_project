@@ -1,4 +1,3 @@
-<link href="{{ asset('images/logo.jpeg') }}" rel="logo"/>
 @extends('layouts.app')
 
 @section('content')
